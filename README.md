@@ -1,2 +1,1 @@
-test
-====
+# Webalogic test package
