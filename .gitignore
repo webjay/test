@@ -25,6 +25,5 @@ build/Release
 node_modules
 
 bower_components
+# dist
 _tmp
-fonts
-*.html

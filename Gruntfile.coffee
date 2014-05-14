@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     copy:
       bootstrap:
         src: 'bower_components/bootstrap/fonts/**'
-        dest: 'fonts'
+        dest: 'dist/fonts'
         expand: true
         flatten: true
         filter: 'isFile'
@@ -21,7 +21,7 @@ module.exports = (grunt) ->
         options:
           keepSpecialComments: 0
         files:
-          'lib/the.css': [
+          'dist/lib/the.css': [
             '_tmp/bootstrap.css'
           ]
 
@@ -32,7 +32,7 @@ module.exports = (grunt) ->
         collapseBooleanAttributes: true
       pages:
         files:
-          'index.html': [
+          'dist/index.html': [
             '_pages/*.html'
           ]
 
