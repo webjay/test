@@ -31,10 +31,10 @@ module.exports = (grunt) ->
         collapseWhitespace: true
         collapseBooleanAttributes: true
       pages:
-        files:
-          'dist/index.html': [
-            '_pages/*.html'
-          ]
+        expand: true
+        cwd: '_pages'
+        src: ['**/*.html']
+        dest: 'dist'
 
   grunt.registerTask 'default', ['copy', 'less', 'cssmin', 'htmlmin']
 
